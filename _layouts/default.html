@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{% seo %}
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <div class="wrapper">
+      <header {% unless site.description or site.github.project_tagline %} class="without-description" {% endunless %}>
+        <header class="page-header" role="banner">
+          <a href="{{ site.baseurl }}">
+              <img src="{{ site.baseurl }}/assets/images/logo.png" alt="Code Kitty">
+          </a>
+        <!---
+        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ github_name }}</small></a></p>
+        <ul>
+        {% if site.show_downloads %}
+          <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
+          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
+        {% endif %}
+          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
+        </ul>
+        -->
+      </header>
+      <section>
+
+      {{ content }}
+
+      </section>
+    </div>
+    <footer>
+    <i>Copyright 2024 (C) Code Kitty</i>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>

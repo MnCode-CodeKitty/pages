@@ -1,0 +1,7 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+header { border-radius: 8px 8px 0 0; background: #8853a7; background: linear-gradient(#c5a5d8, #8853a7); position: relative; padding: 15px 20px; border-bottom: 1px solid #B2D2E1; }
+header img { max-width: 50%; height: auto;}
